@@ -1,0 +1,42 @@
+﻿<Window x:Class="WpfAppTextBoxMD.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfAppTextBoxMD"
+        mc:Ignorable="d"
+        
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+        TextElement.FontWeight="Regular"
+        TextElement.FontSize="13"
+        TextOptions.TextFormattingMode="Ideal"
+        TextOptions.TextRenderingMode="Auto"
+        Background="{DynamicResource MaterialDesignPaper}"
+        FontFamily="{DynamicResource MaterialDesignFont}"
+        
+        Title="MainWindow" Height="400" Width="300">
+    <StackPanel>
+        <TextBox Margin="10">Olá Mundo!</TextBox>
+        <TextBox Margin="10"
+                 FontWeight="Bold">Olá mundo de novo!</TextBox>
+        <TextBox Margin="10"
+                 IsEnabled="False">Não disponível</TextBox>
+        <TextBox Margin="10"
+                 IsReadOnly="True">Somente leitura!</TextBox>
+        <TextBox Margin="10"
+                 Foreground="Red"
+                 FontWeight="Bold"
+                 MaxLength="40">Máximo 40 caracteres</TextBox>
+        <TextBox Margin="10"
+                 Foreground="Blue"
+                 FontWeight="Bold"
+                 AcceptsReturn="True" MaxHeight="60">Aceita parágrafo</TextBox>
+        <TextBox Margin="10"
+                 Width="200"
+                 AcceptsReturn="True"
+                 TextWrapping="Wrap"
+                 TextAlignment="Left">Texto com quebra automática</TextBox>
+        
+    </StackPanel>
+</Window>
